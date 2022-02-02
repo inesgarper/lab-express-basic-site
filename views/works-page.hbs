@@ -1,0 +1,27 @@
+<div class="container">
+
+    <h1>WORKS PAGE</h1>
+
+    <hr>
+
+    <div class="row">
+
+        {{#each theSongs}}
+
+        <div class="col-md-4">
+            <div class="card player-card">
+                <img src="{{cover}}" alt="{{name}}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    <p class="card-text">Released year: {{year}}</p>
+                    <p class="card-text">Spotify plays: {{spotify_plays}}</p>
+                    <p class="card-text">Duration: {{duration}}</p>
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</div>
